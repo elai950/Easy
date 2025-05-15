@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct EasyApp: App {
+    @StateObject private var dataController = DataController()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView{
+                ContentView()
+                    .environmentObject(dataController)
+                    .environment(\.managedObjectContext, dataController.container.viewContext)
+            }
         }
     }
 }
