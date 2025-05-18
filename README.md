@@ -66,17 +66,3 @@ AlertToast: A lightweight open-source library I created to show alerts and toast
 # ⚠️ Known Limitations
 
 Network Issues: TheMovieDB API occasionally returns timeout or connection lost errors after the first launch. This issue persisted even after switching from URLSession to Alamofire, so I reverted to URLSession.
-
-No TCA: Due to limited time and other assignments, I didn’t have the opportunity to explore TCA and opted to implement MVVM instead. I'm looking forward for learning this topic.
-
-# 🚀 Improvements & Future Work
-
-Increment Commits: Missed this request and already finished by the time I noticed that. Need to improve my focus and pay attention to the requirements better.
-
-Offline Support: Improve the offline experience by caching more data, which would also mitigate the API issues.
-
-Smarter Caching: Implement a more robust caching layer for both movies and images to reduce network calls. A manual refresh button could also be added.
-
-Enhanced Animations: Improve the look and feel with better transitions and animations. This is an area I'm especially excited to explore further.
-
-Error Handling: Implement logic for errors. Show relevant popups using a custom `NetworkError` object.
